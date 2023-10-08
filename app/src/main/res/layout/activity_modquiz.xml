@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false"
+    android:background="#273036"
+    tools:context=".modquiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="MODULE 1 QUIZ"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+        <DigitalClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:text="Select the correct answer. \n \n"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="1. When was the first computer invented?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1943"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1945"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1950"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="2. What was the name of the first computer invented?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENAIC"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENIAC"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APPLE"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="3. Who is known as the father of computers?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charles White"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elon Musk"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charles Babbage"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="4. What was the first computer system that used color display?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple 2"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans4b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple 1"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMD"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="5. What was the first mass-produced computer?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IBM 650"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IBM 750"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans5c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IBM 950"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="6. When was the first 1 GB disk drive released in the world?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans6a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1943"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans6b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1980"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans6c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1950"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="7. What was the name of the first computer programmer?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans7a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ada Lovelace"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans7b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charles Babbage"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans7c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konrad Zuse"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="8. Who is called the inventor of the first modern electronic computer?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans8a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charles Babbage"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans8b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ada Lovelace"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans8c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konrad Zuse"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="9. How many generations of computers have been invented?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans9a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Five generations"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans9b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Four generations"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans9c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Six generations"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/question10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="10. Which popular company designed the first CPU?"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/ans10a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans10b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMD"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/ans10c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intel"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/response10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/quizSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Submit Quiz"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="50sp"
+            android:layout_gravity="center"
+            android:textColor="@color/teal_200"/>
+
+        <Button
+            android:id="@+id/backtostudentmenu2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Back to Student Menu"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+</ScrollView>

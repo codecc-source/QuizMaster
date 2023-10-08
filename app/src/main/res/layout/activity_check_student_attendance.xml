@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkStudentAttendance">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="650dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wave__12_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Attendance Viewer"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="5dp">
+
+            <Button
+                android:id="@+id/student1Attendance"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Student 1 Attendance"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/student2Attendance"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Student 2 Attendance"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/student3Attendance"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Student 3 Attendance"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/student4Attendance"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Student 4 Attendance"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/student5Attendance"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Student 5 Attendance"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/teacherAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wave__13_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/check_gif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
+
+    <ImageView
+        android:id="@+id/boximg"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:src="@drawable/calendar_pic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.690" />
+
+    <ImageView
+        android:id="@+id/check1"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="244dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
+
+    <ImageView
+        android:id="@+id/check2"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <ImageView
+        android:id="@+id/check3"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="128dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <ImageView
+        android:id="@+id/check4"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="188dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <ImageView
+        android:id="@+id/check5"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="244dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <ImageView
+        android:id="@+id/check6"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <ImageView
+        android:id="@+id/check7"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="128dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <ImageView
+        android:id="@+id/check8"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="188dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <ImageView
+        android:id="@+id/check9"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="244dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <ImageView
+        android:id="@+id/check10"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <ImageView
+        android:id="@+id/check11"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="128dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <ImageView
+        android:id="@+id/check12"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="188dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <ImageView
+        android:id="@+id/check13"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="244dp"
+        android:src="@drawable/check2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <Button
+        android:id="@+id/backtomainTeacher3"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/black"
+        android:text="Back to Teacher Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
